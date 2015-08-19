@@ -12,8 +12,11 @@ shinyUI(pageWithSidebar(
     mainPanel(
         h3("Main panel"),
         p(),
-        "For a positive function f, the integral of f(x) from x=a to x=b is equal to the area between f(x) and the x-axis.",
+        "For a non-negative function f, the integral of f(x) from x=a to x=b is equal to the area between f(x) and the x-axis.",
         "We can approximate this area with rectangles. As we increase the number of rectangles, the area covered by the rectangles gets closer and closer to the actual area we seek.",
+        p(),
+        "The area covered by the rectangles may be too large or too small, depending on (1) whether the function is increasing or decreasing",
+        "and (2) whether the height of each rectangle is the value of the function at the left or right endpoint of the base of that rectangle.",
         br(),
         br(),
         "Function: ",
