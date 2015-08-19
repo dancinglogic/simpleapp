@@ -20,7 +20,9 @@ shinyUI(pageWithSidebar(
         p(),
         "This app helps you visualize the left-hand and right-hand sums for two different functions, and allows you to vary the number of rectangles used.",
         "Play with the parameters and see how the picture changes!",
-h3("You entered:"),
+p(),
+        plotOutput('plot'),
+        h3("You entered:"),
         br(),
         "Function: ",
         textOutput('f'),
@@ -30,8 +32,7 @@ h3("You entered:"),
         br(),
         "Type of sum:",
         textOutput('type'),
-        br(),
-        plotOutput('plot')
+        br()
     )
 ))
 
